@@ -1,5 +1,4 @@
 # Human characteristics
-
 hair_color = {"black": "CCAGCAATCGC", "brown": "GCCAGTGCCG", "blonde": "TTAGCTATCGC"}
 facial_shape = {"square": "GCCACGG", "round": "ACCACAA", "oval": "AGGCCTCA"}
 eye_color = {"blue": "TTGTGGTGGC", "green": "GGGAGGTGGC", "brown": "AAGTAGTGAC"}
@@ -7,9 +6,7 @@ gender = {"male": "TGCAGGAACTTC", "female": "TGAAGGACCTTC"}
 race = {"white": "AAAACCTCA", "black": "CGACTACAG", "asian": "CGCGGGCCG"}
 
 suspectprofile = []
-
 print("The criminal has the following characteristics: ")
-
 with open("dna.txt") as suspectdna:
     readable = suspectdna.read()
 
@@ -68,13 +65,13 @@ with open("dna.txt") as suspectdna:
         print("Asian")
         suspectprofile.append({"race": "asian"})
 
+# Our suspects
 eva = [{"hair_color": "blonde"}, {"facial_shape": "oval"}, {"eye_color": "blue"}, {"gender": "female"}, {"race": "white"}]
 larisa = [{"hair_color": "brown"}, {"facial_shape": "oval"}, {"eye_color": "brown"}, {"gender": "female"}, {"race": "white"}]
 matej = [{"hair_color": "black"}, {"facial_shape": "oval"}, {"eye_color": "blue"}, {"gender": "male"}, {"race": "white"}]
 miha = [{"hair_color": "brown"}, {"facial_shape": "square"}, {"eye_color": "green"}, {"gender": "male"}, {"race": "white"}]
 
 print("Matching DNA...")
-
 if suspectprofile == eva:
     print("Eva is guilty!")
 elif suspectprofile == larisa:
